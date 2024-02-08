@@ -1,10 +1,11 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import HomeScreen from './src/styles/screens/HomeScreen';
-import SettingsScreen from './src/styles/screens/SettingsScreen';
-import FlatlistTutorial from './src/styles/screens/FlatlistTutorial';
-import TouchableHighlightTutorial from './src/styles/screens/TouchableHighlightTutorial';
+import HomeScreen from './src/screens/HomeScreen';
+import SettingsScreen from './src/screens/SettingsScreen';
+import FlatlistTutorial from './src/screens/FlatlistTutorial';
+import TouchableHighlightTutorial from './src/screens/TouchableHighlightTutorial';
+import RadioButtons from './src/screens/RadioButtons';
 
 const App = (): React.JSX.Element => {
   const Tab = createBottomTabNavigator();
@@ -18,6 +19,8 @@ const App = (): React.JSX.Element => {
           <Tab.Screen name="FlatlistTutorial" component={FlatlistTutorial} />
           {/* touch able highlight */}
           <Tab.Screen name="Touch Able Highlight" component={TouchableHighlightTutorial} />
+          {/* radio button */}
+          <Tab.Screen name="Radio Button" component={RadioButtons} />
 
           <Tab.Screen name="Settings" component={SettingsScreen} />
         </Tab.Navigator>

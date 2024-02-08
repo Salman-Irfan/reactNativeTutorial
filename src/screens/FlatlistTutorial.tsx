@@ -1,6 +1,6 @@
 import { FlatList, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import users from '../../services/data/users'
+import users from '../services/data/users'
 
 const FlatlistTutorial = () => {
 
