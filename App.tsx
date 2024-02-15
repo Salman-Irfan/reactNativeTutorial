@@ -10,6 +10,7 @@ import ResponsiveLayout from './src/screens/ResponsiveLayout';
 import ActivityIndicatorCustom from './src/screens/ActivityIndicatorCustom';
 import ModalCustom from './src/screens/ModalCustom';
 import PressableCustom from './src/screens/PressableCustom';
+import StatusBarCustom from './src/screens/StatusBarCustom';
 
 
 const App = (): React.JSX.Element => {
@@ -34,7 +35,9 @@ const App = (): React.JSX.Element => {
           <Tab.Screen name="Modal" component={ModalCustom} />
           {/* pressable */}
           <Tab.Screen name="Pressable" component={PressableCustom} />
-          
+          {/* status bar */}
+          <Tab.Screen name="Status Bar" component={StatusBarCustom} />
+
           {/* settings */}
           <Tab.Screen name="Settings" component={SettingsScreen} />
         </Tab.Navigator>
