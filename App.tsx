@@ -8,6 +8,7 @@ import TouchableHighlightTutorial from './src/screens/TouchableHighlightTutorial
 import RadioButtons from './src/screens/RadioButtons';
 import ResponsiveLayout from './src/screens/ResponsiveLayout';
 import ActivityIndicatorCustom from './src/screens/ActivityIndicatorCustom';
+import ModalCustom from './src/screens/ModalCustom';
 
 
 const App = (): React.JSX.Element => {
@@ -28,6 +29,8 @@ const App = (): React.JSX.Element => {
           <Tab.Screen name="Responsive Layout" component={ResponsiveLayout} />
           {/* responsive layout */}
           <Tab.Screen name="Activity Indicator" component={ActivityIndicatorCustom} />
+          {/* modal */}
+          <Tab.Screen name="Modal" component={ModalCustom} />
 
           {/* settings */}
           <Tab.Screen name="Settings" component={SettingsScreen} />
