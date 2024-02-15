@@ -9,6 +9,7 @@ import RadioButtons from './src/screens/RadioButtons';
 import ResponsiveLayout from './src/screens/ResponsiveLayout';
 import ActivityIndicatorCustom from './src/screens/ActivityIndicatorCustom';
 import ModalCustom from './src/screens/ModalCustom';
+import PressableCustom from './src/screens/PressableCustom';
 
 
 const App = (): React.JSX.Element => {
@@ -31,7 +32,9 @@ const App = (): React.JSX.Element => {
           <Tab.Screen name="Activity Indicator" component={ActivityIndicatorCustom} />
           {/* modal */}
           <Tab.Screen name="Modal" component={ModalCustom} />
-
+          {/* pressable */}
+          <Tab.Screen name="Pressable" component={PressableCustom} />
+          
           {/* settings */}
           <Tab.Screen name="Settings" component={SettingsScreen} />
         </Tab.Navigator>
