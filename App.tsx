@@ -6,6 +6,7 @@ import SettingsScreen from './src/screens/SettingsScreen';
 import FlatlistTutorial from './src/screens/FlatlistTutorial';
 import TouchableHighlightTutorial from './src/screens/TouchableHighlightTutorial';
 import RadioButtons from './src/screens/RadioButtons';
+import ResponsiveLayout from './src/screens/ResponsiveLayout';
 
 const App = (): React.JSX.Element => {
   const Tab = createBottomTabNavigator();
@@ -21,7 +22,10 @@ const App = (): React.JSX.Element => {
           <Tab.Screen name="Touch Able Highlight" component={TouchableHighlightTutorial} />
           {/* radio button */}
           <Tab.Screen name="Radio Button" component={RadioButtons} />
+          {/* responsive layout */}
+          <Tab.Screen name="Responsive Layout" component={ResponsiveLayout} />
 
+          {/* settings */}
           <Tab.Screen name="Settings" component={SettingsScreen} />
         </Tab.Navigator>
       </NavigationContainer>
