@@ -7,7 +7,7 @@ const StatusBarCustom = () => {
             <StatusBar
                 backgroundColor={'orange'}
                 barStyle={'dark-content'}
-                hidden={false}
+                hidden={true}
             />
             <Text style={{color:'black'}} >StatusBarCustom</Text>
         </View>

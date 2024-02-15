@@ -11,6 +11,7 @@ import ActivityIndicatorCustom from './src/screens/ActivityIndicatorCustom';
 import ModalCustom from './src/screens/ModalCustom';
 import PressableCustom from './src/screens/PressableCustom';
 import StatusBarCustom from './src/screens/StatusBarCustom';
+import WebViewCustom from './src/screens/WebViewCustom';
 
 
 const App = (): React.JSX.Element => {
@@ -37,6 +38,8 @@ const App = (): React.JSX.Element => {
           <Tab.Screen name="Pressable" component={PressableCustom} />
           {/* status bar */}
           <Tab.Screen name="Status Bar" component={StatusBarCustom} />
+          {/* web view */}
+          <Tab.Screen name="Web View" component={WebViewCustom} />
 
           {/* settings */}
           <Tab.Screen name="Settings" component={SettingsScreen} />
