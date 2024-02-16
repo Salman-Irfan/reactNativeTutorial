@@ -14,6 +14,7 @@ import StatusBarCustom from './src/screens/StatusBarCustom';
 import WebViewCustom from './src/screens/WebViewCustom';
 import LoginScreen from './src/screens/LoginScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Button, Text, View } from 'react-native';
 
 const App = (): React.JSX.Element => {
   const Tab = createBottomTabNavigator();
@@ -22,7 +23,21 @@ const App = (): React.JSX.Element => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={({ navigation }) => ({
+            title: "Login Screen",
+            headerLeft: () => (<Button title="Left" />),
+            headerTitle: () => (
+              <>
+                <View><Text style={{ color: 'black', fontSize:30 }} >Login Screen Title</Text></View>
+              </>
+            ),
+            headerRight: () => ( <Button title="Right" />
+            ),
+          })}
+        />
         <Stack.Screen
           name="Main"
           options={{
