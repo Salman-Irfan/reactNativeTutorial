@@ -3,9 +3,11 @@ import { NavigationProp } from '@react-navigation/native';
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from '../redux/slices/counterSlice'
-
+import envConfig from '../../config';
 
 const LoginScreen = (props: any) => {
+    console.log(envConfig.BASE_URL)
+    
     const count = useSelector((state: any) => state.counter.value)
     const dispatch = useDispatch()
 
